@@ -13,9 +13,6 @@ from google.genai import types, errors
 from gtts import gTTS
 from tensorflow.lite.python.interpreter import Interpreter
 
-# Optional: if you have a Coral Edge‑TPU or GPU delegate, uncomment and adjust:
-# from tensorflow.lite.python.interpreter import load_delegate
-
 # ── Page config ─────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Plant Disease Detection",
@@ -51,10 +48,6 @@ def clear_results():
 # ── Load TFLite interpreter (with optional delegate) ─────────────────────────
 @st.cache_resource
 def load_interpreter():
-    # If you want to use a GPU / TPU delegate, do something like:
-    # delegates = [ load_delegate('libedgetpu.so.1') ]
-    # return Interpreter(model_path="plant_disease_model_quantized.tflite",
-    #                    experimental_delegates=delegates)
     interpreter = Interpreter(model_path="plant_disease_model_quantized.tflite")
     interpreter.allocate_tensors()
     return interpreter
