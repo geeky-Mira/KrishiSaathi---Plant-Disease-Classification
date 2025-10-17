@@ -1,8 +1,6 @@
 # 🌿 KrishiSaathi – Plant Disease Detection App  
 
 [![Live App](https://img.shields.io/badge/🌐_Try_App-Streamlit-success?style=for-the-badge)](https://krishisaathi.streamlit.app/)
-[![View Notebook](https://img.shields.io/badge/Jupyter_Notebook-View-blue?style=for-the-badge)](https://github.com/geeky-Mira/KrishiSaathi---Plant-Disease-Classification/blob/main/plant-disease-detection.ipynb)
-[![Main Script](https://img.shields.io/badge/Main_Script-Python-blueviolet?style=for-the-badge)](https://github.com/geeky-Mira/KrishiSaathi---Plant-Disease-Classification/blob/main/main.py)
 
 ---
 
